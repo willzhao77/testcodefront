@@ -92,10 +92,11 @@ export default {
 
                     let universities = JSON.parse(response)
 
-                    universities.forEach(niversity => {
+                    universities.forEach(university => {
                         self.showData.forEach( (item) => {
-                        if(item.name == niversity.name){
-                            item.webpages = niversity.webpages
+                        if(item.name == university.name){
+                            item.webpages = university.webpages
+                            item.domains = university.domains
                         } 
                         })
                     })
